@@ -16,4 +16,19 @@
         <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="Shared\Class1.cs">
+        <Link>ClassLibrary1\Class1.cs</Link>
+      </Compile>
+      <Compile Update="FantasyPredictor.Shared\Models\PlayerModel.cs">
+        <Link>Shared\Models\PlayerModel.cs</Link>
+      </Compile>
+      <Compile Update="FantasyPredictor.Shared\Models\TeamModel.cs">
+        <Link>Shared\Models\TeamModel.cs</Link>
+      </Compile>
+      <Compile Update="FantasyPredictor.Shared\Models\OppositionTeamModel.cs">
+        <Link>Shared\Models\OppositionTeamModel.cs</Link>
+      </Compile>
+    </ItemGroup>
+
 </Project>
